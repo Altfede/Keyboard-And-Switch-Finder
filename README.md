@@ -27,11 +27,44 @@ Sistema di raccomandazione intelligente e trasparente per tastiere meccaniche, s
 
 ## 🚀 Quick Start
 
-### Prerequisiti
+### Opzione 1: Eseguibile standalone (.exe) - CONSIGLIATO PER UTENTI
+
+**Vuoi usare l'app senza installare Python?** Scarica l'eseguibile precompilato:
+
+1. Scarica `KeyboardFinder.exe` dalla sezione [Releases](../../releases)
+2. Fai doppio clic su `KeyboardFinder.exe`
+3. Il browser si aprirà automaticamente su `http://localhost:5000`
+
+✅ Nessuna installazione richiesta!
+✅ Il server si avvia automaticamente
+✅ Il browser si apre da solo
+
+**Oppure crea tu l'eseguibile:**
+
+#### Su Windows:
+```bash
+# Esegui lo script di build automatico
+build_exe.bat
+```
+
+#### Su Linux/Mac:
+```bash
+# Dai i permessi ed esegui
+chmod +x build_exe.sh
+./build_exe.sh
+```
+
+Dopo pochi minuti troverai `KeyboardFinder.exe` (Windows) o `KeyboardFinder` (Linux/Mac) nella cartella principale.
+
+---
+
+### Opzione 2: Esecuzione da codice sorgente (per sviluppatori)
+
+#### Prerequisiti
 - Python 3.8+
 - pip
 
-### Installazione
+#### Installazione
 
 ```bash
 # Clona il repository
@@ -47,7 +80,7 @@ python run.py
 
 L'applicazione sarà disponibile su `http://localhost:5000`
 
-### Installazione con virtual environment (consigliato)
+#### Con virtual environment (consigliato)
 
 ```bash
 # Crea virtual environment
