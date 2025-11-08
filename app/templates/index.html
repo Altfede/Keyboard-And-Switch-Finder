@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard & Switch Finder</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>🎹 Keyboard & Switch Finder</h1>
+            <p class="subtitle">Trova la tastiera meccanica perfetta per te</p>
+        </header>
+
+        <main class="mode-selection">
+            <h2>Cosa stai cercando?</h2>
+            <p class="description">
+                Scegli la modalità di ricerca per iniziare il questionario personalizzato.
+                Ti guideremo passo dopo passo per trovare la soluzione perfetta.
+            </p>
+
+            <div class="mode-cards">
+                <!-- Switch Mode -->
+                <div class="mode-card" data-mode="switch">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Switch Meccanici</h3>
+                    <p>Trova gli switch perfetti in base a feel, suono, peso e caratteristiche</p>
+                    <ul class="features">
+                        <li>Analisi dettagliata del feel (lineare, tattile, clicky)</li>
+                        <li>Matching basato su suono e smoothness</li>
+                        <li>Considerazione di budget e disponibilità</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="startMode('switch')">
+                        Trova Switch
+                    </button>
+                </div>
+
+                <!-- Keycaps Mode -->
+                <div class="mode-card" data-mode="keycap">
+                    <div class="card-icon">🔤</div>
+                    <h3>Keycaps</h3>
+                    <p>Scegli il set di keycaps ideale per layout, materiale e stile</p>
+                    <ul class="features">
+                        <li>Compatibilità layout (ANSI, ISO, ISO-IT)</li>
+                        <li>Materiali e profili (Cherry, SA, XDA...)</li>
+                        <li>Stile estetico e sound signature</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="startMode('keycap')">
+                        Trova Keycaps
+                    </button>
+                </div>
+
+                <!-- Board Mode -->
+                <div class="mode-card" data-mode="board">
+                    <div class="card-icon">⌨️</div>
+                    <h3>Tastiera Completa</h3>
+                    <p>Trova la tastiera meccanica completa con tutte le caratteristiche</p>
+                    <ul class="features">
+                        <li>Form factor e layout personalizzato</li>
+                        <li>Hot-swap, mounting, connettività</li>
+                        <li>Sound signature e programmabilità</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="startMode('board')">
+                        Trova Tastiera
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Sistema di raccomandazione trasparente basato su scoring con cosine similarity</p>
+            <p class="credits">Developed with ❤️ for mechanical keyboard enthusiasts</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

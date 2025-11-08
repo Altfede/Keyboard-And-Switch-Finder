@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati - Keyboard Finder</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container results-container">
+        <header class="results-header">
+            <h1>I tuoi risultati</h1>
+            <p class="subtitle">Basati sulle tue preferenze con scoring trasparente</p>
+        </header>
+
+        <!-- Main result -->
+        <div class="main-result" id="mainResult">
+            <!-- Iniettato da JS -->
+        </div>
+
+        <!-- Alternative results -->
+        <div class="alternatives-section">
+            <h2>Alternative consigliate</h2>
+            <div id="alternativeResults" class="results-grid">
+                <!-- Iniettato da JS -->
+            </div>
+        </div>
+
+        <!-- Session summary -->
+        <details class="session-summary">
+            <summary>📊 Riepilogo della sessione (trasparenza totale)</summary>
+            <div id="sessionSummary">
+                <!-- Iniettato da JS -->
+            </div>
+        </details>
+
+        <!-- Actions -->
+        <div class="results-actions">
+            <button class="btn btn-secondary" onclick="goBackToWizard()">
+                ← Modifica risposte
+            </button>
+            <button class="btn btn-primary" onclick="exportResults()">
+                📥 Esporta Build Sheet
+            </button>
+            <button class="btn btn-success" onclick="startNew()">
+                🔄 Nuova ricerca
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/js/results.js"></script>
+</body>
+</html>

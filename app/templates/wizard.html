@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario - Keyboard Finder</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container wizard-container">
+        <!-- Progress bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+            <span class="progress-text" id="progressText">0%</span>
+        </div>
+
+        <!-- Wizard content -->
+        <div class="wizard-content">
+            <div id="questionContainer">
+                <!-- Le domande vengono iniettate dinamicamente qui -->
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="wizard-navigation">
+                <button class="btn btn-secondary" id="backBtn" onclick="goBack()" disabled>
+                    ← Indietro
+                </button>
+                <button class="btn btn-primary" id="nextBtn" onclick="goNext()">
+                    Avanti →
+                </button>
+                <button class="btn btn-success" id="submitBtn" onclick="submitQuiz()" style="display: none;">
+                    Ottieni Raccomandazioni ✨
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading overlay -->
+        <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+            <div class="spinner"></div>
+            <p>Sto analizzando le tue preferenze...</p>
+        </div>
+    </div>
+
+    <script src="/static/js/wizard.js"></script>
+</body>
+</html>
